@@ -1,0 +1,297 @@
+:root{
+    --primary-color:#ff2d37;
+     --white-color:#fff;
+     --black-color:#000;
+     --text-color:#333;
+     --border-color:#dbdbdb;
+     /* --header-heigh:120px;
+     --navbar-heigh:34px; */
+     --star-gold-color:#ffce3e;
+    /* --header-with-search-heigh: calc(var(--header-heigh) - var(--navbar-heigh)); */
+    }
+    *{
+        box-sizing: border-box;
+    }
+    html{
+        font-size: 62.5%;
+        line-height: 1.6rem;
+        font-family: 'Tahoma',sans-serif;
+        box-sizing: border-box;
+    }
+    .grid{
+    width:1200px ;
+    max-width: 100%;
+    margin: 0 auto;
+    }
+    .grid__full-width{
+    width: 100%;
+    }
+    .grid__row{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .no-border{
+        border: none !important;
+    }
+    .btn{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        color: var(--primary-color);
+        font-size: 2rem;
+        border: 1px solid #cccbcb;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: var(--white-color);
+    }
+    .btn:hover{
+        background-color: rgba(255, 255, 255, 0.7);
+        
+    }
+    @keyframes comeIn{
+        from{
+            transform: scaleX(-5px);
+        }
+        to{
+            transform: scaleX(0);
+        }
+    }
+    @keyframes fadeIn{
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 2;
+        }
+    }
+    @keyframes growth{
+        from{
+            transform: scale(var(--growth-from));
+        }
+        to{
+            transform: scale(var(--growth-to));
+
+        }
+    }
+    .section{
+        background-color: #f8f8f8;
+    }
+    .section-wrap{
+    
+    }
+    .container__section{
+    display: block;
+    }
+    .section__heading{
+        padding-top: 20px;
+        padding-bottom: 14px;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    justify-content: flex-start;
+    }
+    
+    .section__title{
+    font-weight: 600;
+    color: #373737;
+    }
+    .section__body{
+    background-color: var(--white-color);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    }
+    .section__item{
+    padding-right: 20px;
+    padding-bottom: 14px;
+    }
+    .section__content{
+        text-decoration: none;
+    
+    }
+    .section__content-heading{
+    background-color: #f5f5f5;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 12px;
+    text-align: center;
+    }
+    .section__content-heading:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    }
+    
+    .section__img{
+    transition: all 0.5s ease 0s;
+        vertical-align: middle;
+        object-fit: cover;
+        min-width: 226px;
+        height: 393px;
+    }
+    .section__img:hover{
+        filter: brightness(130%);
+    }
+    .bs-block:hover{
+        box-shadow: 0 0 20px #e2dfdf;
+    }
+    .ml-22{
+        margin-left: 22px;
+    }
+    .mt-10{
+        margin-top: 29px;
+    }
+    .pt-28{ padding-top: 28px;}
+    .pb-0{
+        padding-bottom: 0 !important;
+    }
+    .section__content:hover .section__img{
+        filter: brightness(130%);
+    }
+    .section__heading-icon{
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        padding: 26px 8px 10px 0;
+        line-height: 0;
+
+    }
+    .section__heading-left{
+        font-size: 1.6rem;
+        display: flex;justify-content: center;
+    }
+    .section__heading-right{
+        display: flex;
+        margin-left: auto;
+    }
+    .section__heading-right--icon{
+        font-size: 1.6rem;
+        font-weight: 200;
+        border: 1px solid #ccc;
+        padding: 10px 12px;
+        margin-left: 2px;
+        color: #555560;
+        margin-bottom: 12px;
+    }
+    .section__heading-right--icon:hover{
+        opacity: .8;
+    }
+    .pb-10{
+        padding-bottom: 10px;
+    }
+    .section__h2{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: block;
+        font-size: 2.5rem;
+    }
+    .section__body-img{
+        display: block;
+        cursor: pointer;
+        padding-top: 0;
+        position: relative;
+    }
+    .section__body-img-car{
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        
+    }
+    .section__body-items{
+        margin-left: auto;
+        display: flex;
+    }
+    .section__body-item{
+        margin-right: 22px;
+        max-width: 200px;
+        border: 0px solid #ccc;
+        height:auto;
+        border-radius: 2px;
+    }
+    .section__body-item-wrap{
+        position: relative;
+        width: 100%;
+        position: relative;
+        border: 1px solid #ccc;
+        border-bottom: transparent;
+    }
+    .section__body-item--img{
+        display: block;
+    }
+    .section__body-wrap--icon{
+        display: flex;
+        justify-content: space-between;
+        height: 45px;
+        padding-top: 10px;
+    }
+    .section__body-item--icon{
+        text-align: center;
+        color: var(--white-color);
+        background-color: var(--primary-color);
+        display: none;
+        width: 45px;
+        height: 35px;
+        font-size: 1.8rem;
+        padding-top: 10px;
+        animation: fadeIn ease 1s;
+    }
+    .section__body-item-info{
+        font-size: 1.6rem;
+        text-align: center;
+        border: 1px solid #ccc;
+    }
+    .section__form-price{
+    display: block;
+    padding-bottom: 36px;
+    margin-top: 0;
+    }
+    .section__body-item:hover .section__body-item--icon{
+        display: block;
+    }
+    .section__form-name:hover{
+        cursor: pointer;
+        color: var(--primary-color);
+    }.pd-0{
+        padding: 0;
+    }
+    .section-last{
+        padding-bottom: 30px;
+        background-color: #f8f8f8;
+    }
+    .section__footer{
+        background-image: url(https://hinhanh.webvua.com/images/adv/4850/resize/0122202104012.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px 0;
+    }
+    .section__footer-content{
+
+    }
+    .section__footer-list{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .section__footer-item{
+        padding: 0 10px;
+    }
+    .section__footer-item--icon{
+        display: block;
+        border-radius: 3px;
+        padding: 14px 13px;
+        background-color: var(--white-color);
+        font-size: 1.6rem;
+        color: #484848;
+        transition: all linear .2s;
+    }
+    .section__footer-item--icon:hover {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+    }
+    .no__more .section__body-item--icon-dis{
+display: none !important;
+    }
