@@ -156,13 +156,15 @@
     .section__heading-icon{
         font-size: 2.5rem;
         color: var(--primary-color);
-        padding: 26px 8px 10px 0;
         line-height: 0;
+        margin-right: 6px;
 
     }
     .section__heading-left{
         font-size: 1.6rem;
-        display: flex;justify-content: center;
+        display: flex;
+        text-align: center;
+        align-items: center;
     }
     .section__heading-right{
         display: flex;
@@ -184,7 +186,7 @@
         padding-bottom: 10px;
     }
     .section__h2{
-        margin-top: 20px;
+        margin-top: 10px;
         margin-bottom: 10px;
         display: block;
         font-size: 2.5rem;
