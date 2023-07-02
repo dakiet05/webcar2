@@ -178,6 +178,7 @@
         margin-left: 2px;
         color: #555560;
         margin-bottom: 12px;
+        cursor: pointer;
     }
     .section__heading-right--icon:hover{
         opacity: .8;
